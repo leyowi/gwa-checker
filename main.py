@@ -22,10 +22,14 @@ z = x / y
 print()
 print("GWA: ", z)
 
-if z < 1.5:
-    print("President's Lister")
+# Check if any grade is higher than 2.5
+if any(grade > 2.5 for grade in grade_lists):
+    print("Not eligible for President's Lister or Dean's Lister")
 else:
-    print("Dean's Lister")
+    if z < 1.5:
+        print("President's Lister")
+    else:
+        print("Dean's Lister")
 
 # Tabulate the results
 print("\n{:<20} {:<10} {:<10}".format("Course", "Units", "Grades"))
