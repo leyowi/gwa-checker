@@ -20,7 +20,7 @@ for i in range(number):
 
 z = x / y
 print()
-print("GWA: ", z)
+print("GWA: ", round(z, 2))
 
 # Check if any grade is higher than 2.5
 if any(grade > 2.5 for grade in grade_lists):
